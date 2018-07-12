@@ -288,6 +288,7 @@ export default {
       let preTime = customStorage.get(PRETIME)
       if (preTime == null) {
         customStorage.set(PRETIME, myDate)
+        return
       }
       let currentTime = myDate
       let diffTime = currentTime - preTime
